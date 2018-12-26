@@ -8,7 +8,7 @@ import (
 
 func main() {
 	po := new(PurchaseOrder)
-	po.Value = 32.1
+	po.Value = 32.134
 
 	SavePO(po, false).Then(func(obj interface{}) error {
 		po := obj.(*PurchaseOrder)
